@@ -1,0 +1,30 @@
+<!--
+ * @Author: Shuangchi He / Yulv
+ * @Email: yulvchi@qq.com
+ * @Date: 2022-04-28 10:27:12
+ * @Motto: Entities should not be multiplied unnecessarily.
+ * @LastEditors: Shuangchi He
+ * @LastEditTime: 2022-04-28 10:28:24
+ * @FilePath: /Jekyll-Pages/index.html
+ * @Description: Modify here please
+-->
+---
+layout: default
+title: 我的Blog
+---
+
+<h2>
+    {{ page.title }}
+</h2>
+
+<p>
+    最新文章
+</p>
+
+<ul>
+    {% for post in site.posts %}
+    <li>
+        {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
