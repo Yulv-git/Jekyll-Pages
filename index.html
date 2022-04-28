@@ -17,6 +17,4 @@ title: 我的Blog
         {{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
-    <!-- {% for post in site.posts %}，表示对所有帖子进行一个遍历。Liquid模板语言规定，输出内容使用两层大括号，
-        单纯的命令使用一层大括号。至于{{site.baseurl}}就是_config.yml中设置的baseurl变量。 -->
 </ul>
