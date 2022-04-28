@@ -11,7 +11,7 @@
 
 <h1><center> Blog on GitHub Pages using Jekyll </h1></center>
 
-使用Jekyll在GitHub页面上写博客
+使用Jekyll在GitHub页面上写博客。
 
 ---
 
@@ -27,7 +27,7 @@
 
 # 1. 致谢
 
-本项目基于[搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](https://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html.)进行实践和整理。
+本项目基于[搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](https://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)进行实践和整理。
 
 # 2. git分支设置
 
