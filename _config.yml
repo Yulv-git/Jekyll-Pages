@@ -1,3 +1,1 @@
-baseurl: /Jekyll-Pages
-# jekyll的设置文件。填入如上内容，其他设置都可以用默认选项，
-# 具体解释参见官方网页https://github.com/mojombo/jekyll/wiki/Configuration。
+baseurl: /Jekyll-Pages  # jekyll的设置文件，其他设置可用默认选项，具体解释见官网https://github.com/mojombo/jekyll/wiki/Configuration。
