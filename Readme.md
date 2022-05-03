@@ -4,14 +4,14 @@
  * @Date: 2022-04-28 11:49:52
  * @Motto: Entities should not be multiplied unnecessarily.
  * @LastEditors: Shuangchi He
- * @LastEditTime: 2022-04-28 22:52:42
+ * @LastEditTime: 2022-05-03 22:22:25
  * @FilePath: /Jekyll-Pages/Readme.md
  * @Description: Init from https://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html
 -->
 
-<h1><center> Blog on GitHub Pages using Jekyll </h1></center>
+<h1><center> Blog on GitHub/Gitee Pages using Jekyll </h1></center>
 
-使用Jekyll在GitHub页面上写博客。
+使用Jekyll在GitHub/Gitee Pages上写博客。
 
 ---
 
@@ -46,6 +46,10 @@ baseurl: /Jekyll-Pages
 ```
 
 其他设置可用默认选项，具体解释见[官网](https://github.com/mojombo/jekyll/wiki/Configuration)。
+
+注意：
+
+- GitHub Pages上的url链接可自动将大写转为小写，而Gitee Pages上的url含有大写字母则会报错。故，您若在Gitee Pages上部署该博客网站，则上述`baseurl`不可出现大写字母，或者您可直接GitHub Pages和Gitee Pages上的该设置都不要出现大写字母。
 
 # 4. 创建模板文件
 
@@ -136,4 +140,13 @@ git commit -m "提交的描述"
 git push origin gh-pages
 ```
 
+注意：
+
+- Gitee Pages不会像GitHub Pages那样会在commit后自动部署，需要手动操作来启动和更新Pages（Gitee项目主页上方的工具栏，下拉“服务”菜单，点击“Gitee Pages”，然后按提示进行操作即可）。
+
 发布成功后，可在 [yulv-git.github.io/Jekyll-Pages](https://yulv-git.github.io/Jekyll-Pages) 网页上看到blog。(`yulv-git`换成您的GitHub用户名。)
+
+另外，若您想直接将该博客网站部署到GitHub（或Gitee Pages）的根目录`用户名.github(或gitee).io/`上，则：
+
+- `_config.yml`中不要对`baseurl`进行设置。即，若不修改其他默认值的话，`_config.yml`为空白文档。
+- 部署在GitHub Pages根目录上的项目名称为：`用户名.github.io`（可参考 https://github.com/Yulv-git/Yulv-git.github.io ），而部署Gitee Pages根目录上的项目名称为：`用户名`（可参考 https://gitee.com/Yulv-git/Yulv-git ）。
